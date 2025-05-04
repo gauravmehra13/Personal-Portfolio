@@ -78,7 +78,7 @@ const About = () => {
             <div className="absolute -bottom-6 -right-6 w-64 h-64 bg-primary-200/30 dark:bg-primary-900/20 rounded-lg"></div>
             <img
               src="/images/mine/About.JPG"
-              alt="Alex working on a laptop"
+              alt="About"
               className="rounded-lg shadow-lg relative z-10 w-full h-auto"
             />
           </motion.div>
