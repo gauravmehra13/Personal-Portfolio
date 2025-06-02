@@ -68,11 +68,11 @@ const projects: Project[] = [
     id: 6,
     title: "Blog",
     description:
-      "A MERN stack blog platform showcasing static blog posts with a clean, responsive interface.",
-    image: "/images/projects/blog.png",
+      "A MERN stack blog platform showcasing static blog posts with a clean, responsive interface and a share article feature.",
+    image: "/images/projects/blogverse.png",
     tags: ["React", "Bootstrap", "MongoDB", "Node.js", "Express"],
-    demo: "https://gauravreactblog.netlify.app/",
-    github: "https://github.com/gauravmehra13/blogProject",
+    demo: "https://my-blog-verse.netlify.app/",
+    github: "https://github.com/gauravmehra13/blog-verse",
     category: ["All", "MERN", "React", "Full Stack"],
   },
   {
