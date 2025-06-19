@@ -14,6 +14,7 @@ const Skills = () => {
     { name: "JavaScript", image: "/images/skills/js.png" },
     { name: "TypeScript", image: "/images/skills/ts.png" },
     { name: "React", image: "/images/skills/react.png" },
+    { name: "Next.js", image: "/images/skills/nextjs.png" },
     { name: "React Query", image: "/images/skills/reactquery.png" },
     { name: "Material UI", image: "/images/skills/materialui.png" },
     { name: "Tailwind CSS", image: "/images/skills/tailwind.png" },

@@ -86,17 +86,17 @@ const projects: Project[] = [
     github: "https://github.com/gauravmehra13/TrelloClone",
     category: ["All", "React", "Firebase"],
   },
-  {
-    id: 8,
-    title: "Database Manager",
-    description:
-      "A simple and clean database management tool featuring CRUD operations, local storage persistence, and a simulated REST API for user data management.",
-    image: "/images/projects/dbmanager.png",
-    tags: ["React", "Bootstrap", "RestAPI"],
-    demo: "https://mydbmanager.netlify.app/",
-    github: "https://github.com/gauravmehra13/databaseManager",
-    category: ["All", "React", "Full Stack"],
-  },
+  // {
+  //   id: 8,
+  //   title: "Database Manager",
+  //   description:
+  //     "A simple and clean database management tool featuring CRUD operations, local storage persistence, and a simulated REST API for user data management.",
+  //   image: "/images/projects/dbmanager.png",
+  //   tags: ["React", "Bootstrap", "RestAPI"],
+  //   demo: "https://mydbmanager.netlify.app/",
+  //   github: "https://github.com/gauravmehra13/databaseManager",
+  //   category: ["All", "React", "Full Stack"],
+  // },
 ];
 
 export default projects;
