@@ -39,18 +39,18 @@ const Experience = () => {
       ],
       color: "border-secondary-500 dark:border-secondary-400",
     },
-    {
-      company: "PrepBytes",
-      role: "Software Developer Apprentice",
-      period: "Jan 2023 - Apr 2023",
-      description:
-        "Apprentice in an agile team, worked on modular code and real-time frontend-backend integration.",
-      achievements: [
-        "Gained practical knowledge of code modularity, maintainability, and collaborative development in an agile environment.",
-        "Enhanced understanding of frontend-backend integration and real-time event-driven programming.",
-      ],
-      color: "border-accent-500 dark:border-accent-400",
-    },
+    // {
+    //   company: "PrepBytes",
+    //   role: "Software Developer Apprentice",
+    //   period: "Jan 2023 - Apr 2023",
+    //   description:
+    //     "Apprentice in an agile team, worked on modular code and real-time frontend-backend integration.",
+    //   achievements: [
+    //     "Gained practical knowledge of code modularity, maintainability, and collaborative development in an agile environment.",
+    //     "Enhanced understanding of frontend-backend integration and real-time event-driven programming.",
+    //   ],
+    //   color: "border-accent-500 dark:border-accent-400",
+    // },
   ];
 
   const activeExperiences = experiences.filter(
