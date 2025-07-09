@@ -27,30 +27,30 @@ const Experience = () => {
       ],
       color: "border-primary-500 dark:border-primary-400",
     },
-    {
-      company: "RexelByte",
-      role: "Frontend Developer",
-      period: "Apr 2023 - Oct 2023",
-      description:
-        "Developed full-stack web applications with React, Node.js, and MongoDB, working in an agile environment for various clients.",
-      achievements: [
-        "Created dynamic, client-focused web solutions with strong emphasis on speed, SEO, and scalability using Next.js and TailwindCSS.",
-        "Engineered modular, high-performance frontends with emphasis on bundle size optimization, smart imports, andscalable architecture across diverse projects.",
-      ],
-      color: "border-secondary-500 dark:border-secondary-400",
-    },
     // {
-    //   company: "PrepBytes",
-    //   role: "Software Developer Apprentice",
-    //   period: "Jan 2023 - Apr 2023",
+    //   company: "RexelByte",
+    //   role: "Frontend Developer",
+    //   period: "Apr 2023 - Oct 2023",
     //   description:
-    //     "Apprentice in an agile team, worked on modular code and real-time frontend-backend integration.",
+    //     "Developed full-stack web applications with React, Node.js, and MongoDB, working in an agile environment for various clients.",
     //   achievements: [
-    //     "Gained practical knowledge of code modularity, maintainability, and collaborative development in an agile environment.",
-    //     "Enhanced understanding of frontend-backend integration and real-time event-driven programming.",
+    //     "Created dynamic, client-focused web solutions with strong emphasis on speed, SEO, and scalability using Next.js and TailwindCSS.",
+    //     "Engineered modular, high-performance frontends with emphasis on bundle size optimization, smart imports, andscalable architecture across diverse projects.",
     //   ],
-    //   color: "border-accent-500 dark:border-accent-400",
+    //   color: "border-secondary-500 dark:border-secondary-400",
     // },
+    {
+      company: "PrepBytes",
+      role: "Software Developer Apprentice",
+      period: "Jan 2023 - Apr 2023",
+      description:
+        "Apprentice in an agile team, worked on modular code and real-time frontend-backend integration.",
+      achievements: [
+        "Gained practical knowledge of code modularity, maintainability, and collaborative development in an agile environment.",
+        "Enhanced understanding of frontend-backend integration and real-time event-driven programming.",
+      ],
+      color: "border-accent-500 dark:border-accent-400",
+    },
   ];
 
   const activeExperiences = experiences.filter(
