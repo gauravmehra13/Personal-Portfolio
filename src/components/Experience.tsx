@@ -42,7 +42,8 @@ const Experience = () => {
     {
       company: "PrepBytes",
       role: "Software Developer Apprentice",
-      period: "Jan 2023 - Apr 2023",
+      // period: "Jan 2023 - Apr 2023",
+      period: "Apr 2023 - Oct 2023",
       description:
         "Apprentice in an agile team, worked on modular code and real-time frontend-backend integration.",
       achievements: [
