@@ -20,19 +20,9 @@ const projects: Project[] = [
     github: "https://github.com/HUSS41N/agentsman-fe",
     category: ["All", "Collab", "React"],
   },
+
   {
     id: 2,
-    title: "Trading Dashboard",
-    description:
-      "Provides real-time trading data visualization, including price charts, moving averages, and trading signals.",
-    image: "/images/projects/tradingDashboard.png",
-    tags: ["TypeScript", "Tailwind CSS", "Lightweight Chart", "Vite"],
-    demo: "https://binancetrading.netlify.app/",
-    github: "https://github.com/gauravmehra13/tradingDashboard",
-    category: ["All", "React", "Data Visualization"],
-  },
-  {
-    id: 3,
     title: "Tether Talk",
     description:
       "Real-time chat app with end-to-end encryption, message sync, and notifications. Features adaptive UI for secure, efficient cross-device communication.",
@@ -43,7 +33,7 @@ const projects: Project[] = [
     category: ["All", "MERN", "React", "Full Stack"],
   },
   {
-    id: 4,
+    id: 3,
     title: "Hotel Booking",
     description:
       "Comprehensive hotel booking platform with location/date search, detailed listings, and booking management.",
@@ -54,15 +44,26 @@ const projects: Project[] = [
     category: ["All", "MERN", "React", "Full Stack"],
   },
   {
-    id: 5,
-    title: "Ecom App",
+    id: 4,
+    title: "BuyNest",
     description:
-      "Mobile e-commerce platform with all essential features for online shopping.",
-    image: "/images/projects/gauravMobilez.png",
-    tags: ["React", "Bootstrap", "EmailJs"],
-    demo: "https://gauravmobilezzz.netlify.app/",
-    github: "https://github.com/gauravmehra13/gauravMobiles",
-    category: ["All", "React", "Full Stack"],
+      "A comprehensive MERN stack e-commerce application, offering a seamless online shopping experience with all necessary features, including order email notifications.",
+    image: "/images/projects/buyNest.png",
+    tags: ["Vite", "Tailwind CSS", "Context API", "Express", "MongoDB"],
+    demo: "https://buy-nest.netlify.app/",
+    github: "https://github.com/gauravmehra13/BuyNest",
+    category: ["All", "MERN", "React", "Full Stack"],
+  },
+  {
+    id: 5,
+    title: "Trading Dashboard",
+    description:
+      "Provides real-time trading data visualization, including price charts, moving averages, and trading signals.",
+    image: "/images/projects/tradingDashboard.png",
+    tags: ["TypeScript", "Tailwind CSS", "Lightweight Chart", "Vite"],
+    demo: "https://binancetrading.netlify.app/",
+    github: "https://github.com/gauravmehra13/tradingDashboard",
+    category: ["All", "React", "Data Visualization"],
   },
   {
     id: 6,
@@ -84,7 +85,7 @@ const projects: Project[] = [
     tags: ["React", "Bootstrap"],
     demo: "https://taskmaster1000.netlify.app/",
     github: "https://github.com/gauravmehra13/TrelloClone",
-    category: ["All", "React", "Firebase"],
+    category: ["All", "React"],
   },
   // {
   //   id: 8,
