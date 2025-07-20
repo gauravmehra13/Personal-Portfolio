@@ -86,7 +86,7 @@ const Navbar = () => {
           {/* Logo */}
           <motion.a
             href="#home"
-            className="text-xl font-bold text-primary-600 dark:text-primary-400 font-mono tracking-tight relative group"
+            className="text-lg sm:text-xl font-bold text-primary-600 dark:text-primary-400 font-mono tracking-tight relative group"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
@@ -98,7 +98,7 @@ const Navbar = () => {
           </motion.a>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-6">
+          <nav className="hidden lg:flex items-center space-x-6">
             {/* Audio Controls */}
             <motion.div
               className="flex items-center space-x-2 mr-4"
@@ -179,8 +179,8 @@ const Navbar = () => {
             </motion.button>
           </nav>
 
-          {/* Mobile Menu Toggle */}
-          <div className="flex items-center md:hidden">
+          {/* Mobile/Tablet Menu Toggle */}
+          <div className="flex items-center lg:hidden">
             <motion.button
               onClick={toggleTheme}
               className="p-2 mr-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200"
@@ -203,17 +203,17 @@ const Navbar = () => {
 
       <audio ref={audioRef} hidden preload="auto" />
 
-      {/* Mobile Menu */}
+      {/* Mobile/Tablet Menu */}
       {mobileMenuOpen && (
         <motion.div
-          className="md:hidden bg-white dark:bg-gray-900 shadow-md"
+          className="lg:hidden bg-white dark:bg-gray-900 shadow-md"
           initial={{ opacity: 0, height: 0 }}
           animate={{ opacity: 1, height: "auto" }}
           exit={{ opacity: 0, height: 0 }}
           transition={{ duration: 0.3 }}
         >
-          <div className="container mx-auto px-4 py-3">
-            {/* 🎵 Mobile Audio Controls */}
+          <div className="container mx-auto max-w-5xl px-4 sm:px-6 py-3">
+            {/* Audio Controls */}
             <div className="flex justify-center items-center space-x-4 pb-4">
               <button
                 onClick={playPrev}
@@ -257,13 +257,13 @@ const Navbar = () => {
               </button>
             </div>
 
-            {/* 🧭 Mobile Nav Links */}
-            <nav className="flex flex-col space-y-4 py-3">
+            {/* Nav Links */}
+            <nav className="flex flex-col space-y-2 py-3">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
-                  className="font-medium py-2 text-gray-800 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400"
+                  className="font-medium py-2 px-4 text-gray-800 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {link.name}
