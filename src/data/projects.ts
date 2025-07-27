@@ -9,7 +9,7 @@ const projects: Project[] = [
     image: "/images/projects/agentsMan.png",
     tags: [
       "Vite",
-      "Tailwind CSS",
+      "Tailwind CSS", 
       "Shadcn UI",
       "Zustand",
       "React Hook Form",
@@ -18,11 +18,21 @@ const projects: Project[] = [
     ],
     demo: "https://agentsman.netlify.app/",
     github: "https://github.com/HUSS41N/agentsman-fe",
-    category: ["All", "Collab", "React"],
+    category: ["All", "Collab", "Recent"],
   },
-
   {
     id: 2,
+    title: "CanvasHub",
+    description: 
+      "Real-time collaborative whiteboard application with features like room management, live chat, drawing tools, and user presence tracking. Built with MERN stack and Socket.IO.",
+    image: "/images/projects/canvasHub.png",
+    tags: ["React", "Socket.IO", "Konva",  "Node.js", "Express", "MongoDB"],
+    demo: "https://canvas-hub.netlify.app/",
+    github: "https://github.com/gauravmehra13/Canvas-Hub",
+    category: ["All", "Recent"],
+  },
+  {
+    id: 3,
     title: "Tether Talk",
     description:
       "Real-time chat app with end-to-end encryption, message sync, and notifications. Features adaptive UI for secure, efficient cross-device communication.",
@@ -30,10 +40,10 @@ const projects: Project[] = [
     tags: ["Vite", "Socket.io", "Node.js", "Express", "MongoDB", "Zustand"],
     demo: "https://tethertalk.onrender.com/",
     github: "https://github.com/gauravmehra13/TetherTalk",
-    category: ["All", "MERN", "React", "Full Stack"],
+    category: ["All", "MERN", "Recent"],
   },
   {
-    id: 3,
+    id: 4,
     title: "Hotel Booking",
     description:
       "Comprehensive hotel booking platform with location/date search, detailed listings, and booking management.",
@@ -44,18 +54,18 @@ const projects: Project[] = [
     category: ["All", "MERN", "React", "Full Stack"],
   },
   {
-    id: 4,
+    id: 5,
     title: "BuyNest",
     description:
       "A comprehensive MERN stack e-commerce application, offering a seamless online shopping experience with all necessary features, including order email notifications.",
     image: "/images/projects/buyNest.png",
     tags: ["Vite", "Tailwind CSS", "Context API", "Express", "MongoDB"],
     demo: "https://buy-nest.netlify.app/",
-    github: "https://github.com/gauravmehra13/BuyNest",
-    category: ["All", "MERN", "React", "Full Stack"],
+    github: "https://github.com/gauravmehra13/BuyNest", 
+    category: ["All", "MERN", "Recent"],
   },
   {
-    id: 5,
+    id: 6,
     title: "Trading Dashboard",
     description:
       "Provides real-time trading data visualization, including price charts, moving averages, and trading signals.",
@@ -66,7 +76,7 @@ const projects: Project[] = [
     category: ["All", "React", "Data Visualization"],
   },
   {
-    id: 6,
+    id: 7,
     title: "Blog",
     description:
       "A MERN stack blog platform showcasing static blog posts with a clean, responsive interface and a share article feature.",
@@ -77,7 +87,7 @@ const projects: Project[] = [
     category: ["All", "MERN", "React", "Full Stack"],
   },
   {
-    id: 7,
+    id: 8,
     title: "Taskmaster",
     description:
       "An intuitive project management tool featuring drag-and-drop task organization for enhanced productivity.",
@@ -88,7 +98,7 @@ const projects: Project[] = [
     category: ["All", "React"],
   },
   // {
-  //   id: 8,
+  //   id: 9,
   //   title: "Database Manager",
   //   description:
   //     "A simple and clean database management tool featuring CRUD operations, local storage persistence, and a simulated REST API for user data management.",

@@ -8,12 +8,13 @@ import projects from "../data/projects";
 
 const Projects = () => {
   const categories = [
-    "All",
+
     // "React",
-    "MERN",
+    "Recent",
+    "All",
     "Collab",
   ];
-  const [activeCategory, setActiveCategory] = useState("All");
+  const [activeCategory, setActiveCategory] = useState("Recent");
   const [showNavButtons, setShowNavButtons] = useState(false);
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -68,11 +69,10 @@ const Projects = () => {
             <motion.button
               key={category}
               onClick={() => setActiveCategory(category)}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                activeCategory === category
+              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${activeCategory === category
                   ? "bg-primary-500 text-white"
                   : "bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700"
-              }`}
+                }`}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               initial={{ opacity: 0, y: 10 }}
