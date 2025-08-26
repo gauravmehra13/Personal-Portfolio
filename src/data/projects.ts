@@ -38,7 +38,7 @@ const projects: Project[] = [
       "Real-time chat app with end-to-end encryption, message sync, and notifications. Features adaptive UI for secure, efficient cross-device communication.",
     image: "/images/projects/tetherTalk.png",
     tags: ["Vite", "Socket.io", "Node.js", "Express", "MongoDB", "Zustand"],
-    demo: "https://tethertalk.onrender.com/",
+    demo: "https://tethertalk.netlify.app/",
     github: "https://github.com/gauravmehra13/TetherTalk",
     category: ["All", "MERN", "Recent"],
   },
