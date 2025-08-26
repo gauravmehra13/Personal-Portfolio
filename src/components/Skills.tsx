@@ -53,7 +53,7 @@ const Skills = () => {
   };
 
   return (
-    <section id="skills" className="py-20 px-4">
+    <section id="skills" className="py-20 px-4 bg-white dark:bg-zinc-950">
       <div className="container mx-auto max-w-6xl">
         <SectionHeading
           title="Skills & Technologies"
@@ -71,7 +71,7 @@ const Skills = () => {
             <motion.div
               key={skill.name}
               variants={itemVariants}
-              className="group relative bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4
+              className="group relative bg-white  dark:bg-zinc-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4
                 hover:border-primary-500/50 dark:hover:border-primary-400/50 transition-all duration-300 shadow-sm
                 hover:shadow-md dark:shadow-gray-900/20 dark:hover:shadow-gray-900/30"
             >

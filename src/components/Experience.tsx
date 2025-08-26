@@ -60,7 +60,7 @@ const Experience = () => {
   const isSingleExperience = activeExperiences.length === 1;
 
   return (
-    <section id="experience" className="py-16 md:py-24 px-4 md:px-0">
+    <section id="experience" className="py-16 md:py-24 px-4 md:px-0 bg-white dark:bg-zinc-950">
       <div className="container mx-auto max-w-6xl">
         <SectionHeading
           title="Work Experience"
@@ -106,7 +106,7 @@ const Experience = () => {
                 }`}
               >
                 <div
-                  className={`bg-white dark:bg-gray-800 p-6 md:p-8 rounded-xl shadow-soft border-l-4 ${exp.color}`}
+                  className={`bg-white dark:bg-zinc-800 p-6 md:p-8 rounded-xl shadow-soft border-l-4 ${exp.color}`}
                 >
                   <div className="flex flex-col">
                     <span className="text-sm font-medium text-gray-500 dark:text-gray-400">

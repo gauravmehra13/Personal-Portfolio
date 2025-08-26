@@ -77,7 +77,7 @@ const Navbar = () => {
     <header
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-white/90 dark:bg-gray-900/90 shadow-soft backdrop-blur-sm py-3"
+          ? "bg-white/90 dark:bg-zinc-950/90 shadow-soft backdrop-blur-sm py-3"
           : "bg-transparent py-5"
       }`}
     >
@@ -108,7 +108,7 @@ const Navbar = () => {
             >
               <button
                 onClick={playPrev}
-                className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+                className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-zinc-800 transition-colors"
                 aria-label="Previous track"
               >
                 <SkipBack size={18} />
@@ -116,7 +116,7 @@ const Navbar = () => {
 
               <motion.button
                 onClick={toggleAudio}
-                className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+                className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-zinc-800 transition-colors"
                 whileTap={{ scale: 0.95 }}
                 aria-label="Play/Pause"
               >
@@ -145,7 +145,7 @@ const Navbar = () => {
 
               <button
                 onClick={playNext}
-                className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+                className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-zinc-800 transition-colors"
                 aria-label="Next track"
               >
                 <SkipForward size={18} />
@@ -169,7 +169,7 @@ const Navbar = () => {
             {/* Theme Toggle */}
             <motion.button
               onClick={toggleTheme}
-              className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+              className="p-2 rounded-full bg-gray-100 dark:bg-zinc-900 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-zinc-800 transition-colors"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.3 }}
@@ -183,7 +183,7 @@ const Navbar = () => {
           <div className="flex items-center lg:hidden">
             <motion.button
               onClick={toggleTheme}
-              className="p-2 mr-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200"
+              className="p-2 mr-2 rounded-full bg-gray-100 dark:bg-zinc-900 text-gray-800 dark:text-gray-200"
               whileTap={{ scale: 0.95 }}
               aria-label="Toggle theme"
             >
@@ -206,7 +206,7 @@ const Navbar = () => {
       {/* Mobile/Tablet Menu */}
       {mobileMenuOpen && (
         <motion.div
-          className="lg:hidden bg-white dark:bg-gray-900 shadow-md"
+          className="lg:hidden bg-white dark:bg-zinc-900 shadow-md"
           initial={{ opacity: 0, height: 0 }}
           animate={{ opacity: 1, height: "auto" }}
           exit={{ opacity: 0, height: 0 }}
@@ -217,7 +217,7 @@ const Navbar = () => {
             <div className="flex justify-center items-center space-x-4 pb-4">
               <button
                 onClick={playPrev}
-                className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+                className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-zinc-800 transition-colors"
                 aria-label="Previous track"
               >
                 <SkipBack size={20} />
@@ -225,7 +225,7 @@ const Navbar = () => {
 
               <motion.button
                 onClick={toggleAudio}
-                className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+                className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-zinc-800 transition-colors"
                 whileTap={{ scale: 0.95 }}
                 aria-label="Play/Pause"
               >
@@ -250,7 +250,7 @@ const Navbar = () => {
 
               <button
                 onClick={playNext}
-                className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+                className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-zinc-800 transition-colors"
                 aria-label="Next track"
               >
                 <SkipForward size={20} />
@@ -263,7 +263,7 @@ const Navbar = () => {
                 <a
                   key={link.name}
                   href={link.href}
-                  className="font-medium py-2 px-4 text-gray-800 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors"
+                  className="font-medium py-2 px-4 text-gray-800 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-100 dark:hover:bg-zinc-800 rounded-lg transition-colors"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {link.name}

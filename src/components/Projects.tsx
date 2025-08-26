@@ -49,7 +49,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="py-16 md:py-24 px-4 md:px-0  bg-gray-50 dark:bg-gray-800/50"
+      className="py-16 md:py-24 px-4 md:px-0  bg-gray-50 dark:bg-zinc-900/95"
     >
       <div className="container mx-auto max-w-6xl">
         <SectionHeading
@@ -70,8 +70,8 @@ const Projects = () => {
               key={category}
               onClick={() => setActiveCategory(category)}
               className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${activeCategory === category
-                  ? "bg-primary-500 text-white"
-                  : "bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700"
+                ? "bg-primary-500 text-white"
+                : "bg-gray-100 dark:bg-zinc-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700"
                 }`}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -114,7 +114,7 @@ const Projects = () => {
             <>
               <button
                 onClick={() => scroll("left")}
-                className="absolute left-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 shadow-md border border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700 z-10 hidden md:block"
+                className="absolute left-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white dark:bg-zinc-800 text-gray-700 dark:text-gray-300 shadow-md border border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700 z-10 hidden md:block"
                 aria-label="Scroll left"
               >
                 <ChevronLeft size={20} />
@@ -122,7 +122,7 @@ const Projects = () => {
 
               <button
                 onClick={() => scroll("right")}
-                className="absolute right-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 shadow-md border border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700 z-10 hidden md:block"
+                className="absolute right-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white dark:bg-zinc-800 text-gray-700 dark:text-gray-300 shadow-md border border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700 z-10 hidden md:block"
                 aria-label="Scroll right"
               >
                 <ChevronRight size={20} />

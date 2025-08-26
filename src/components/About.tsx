@@ -59,7 +59,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="py-16 md:py-24 px-4 md:px-0 bg-gray-50 dark:bg-gray-800/50"
+      className="py-16 md:py-24 px-4 md:px-0 bg-gray-50 dark:bg-zinc-900"
     >
       <div className="container mx-auto max-w-6xl">
         <SectionHeading
@@ -116,7 +116,7 @@ const About = () => {
               {stats.map((stat, index) => (
                 <motion.div
                   key={stat.label}
-                  className="flex items-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-soft"
+                  className="flex items-center p-4 bg-white dark:bg-zinc-800 rounded-lg shadow-soft"
                   custom={index}
                   initial="hidden"
                   animate={inView ? "visible" : "hidden"}

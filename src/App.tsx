@@ -16,7 +16,7 @@ function App() {
   useEffect(() => {
     // Add smooth scrolling behavior
     window.document.documentElement.style.scrollBehavior = 'smooth';
-    
+
     return () => {
       window.document.documentElement.style.scrollBehavior = 'auto';
     };
@@ -24,7 +24,7 @@ function App() {
 
   return (
     <div className={`${theme} transition-colors duration-300`}>
-      <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-800 dark:text-white">
+      <div className="min-h-screen bg-white dark:bg-zinc-900 text-gray-800 dark:text-white">
         <Navbar />
         <ScrollMeter />
         <motion.div

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section id="home" className="pt-28 md:pt-36 pb-16 md:pb-24 px-4 md:px-0">
+    <section id="home" className="pt-28 md:pt-36 pb-16 md:pb-24 px-4 md:px-0 bg-white dark:bg-zinc-950">
       <div className="container mx-auto max-w-5xl">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <motion.div
@@ -40,7 +40,7 @@ const Hero = () => {
               <motion.a
                 href="/Resume.pdf"
                 download="gaurav-mehra-resume.pdf"
-                className="px-6 py-3 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 text-gray-800 dark:text-gray-200 font-medium rounded-lg flex items-center justify-center hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
+                className="px-6 py-3 bg-white dark:bg-zinc-800 border border-gray-300 dark:border-gray-700 text-gray-800 dark:text-gray-200 font-medium rounded-lg flex items-center justify-center hover:bg-gray-50 dark:hover:bg-zinc-700 transition-colors"
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
               >

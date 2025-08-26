@@ -20,7 +20,7 @@ interface ProjectCardProps {
 const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
   return (
     <motion.div 
-      className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-soft group h-full flex flex-col"
+      className="bg-white dark:bg-zinc-800 rounded-xl overflow-hidden shadow-soft group h-full flex flex-col"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, delay: index * 0.1 }}
@@ -76,7 +76,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
           {project.tags.map((tag) => (
             <span 
               key={tag} 
-              className="inline-block px-3 py-1 text-xs font-medium rounded-full bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200"
+              className="inline-block px-3 py-1 text-xs font-medium rounded-full bg-gray-100 dark:bg-zinc-700 text-gray-800 dark:text-gray-200"
             >
               {tag}
             </span>
