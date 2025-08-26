@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { ChevronUp } from "lucide-react";
 
 const ScrollMeter = () => {
   const [scrollPercent, setScrollPercent] = useState(0);
+  const [hovered, setHovered] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -44,7 +46,14 @@ const ScrollMeter = () => {
           transition={{ duration: 0.4 }}
           className="fixed bottom-[10%] right-6 md:right-10 z-50"
         >
-          <div className="relative w-16 h-16 rounded-full bg-white/30 dark:bg-gray-800/30 backdrop-blur-md border border-gray-300 dark:border-gray-700 shadow-soft flex items-center justify-center">
+          <button
+            type="button"
+            aria-label="Scroll to top"
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            onMouseEnter={() => setHovered(true)}
+            onMouseLeave={() => setHovered(false)}
+            className="relative w-16 h-16 rounded-full bg-white/30 dark:bg-gray-800/30 backdrop-blur-md border border-gray-300 dark:border-gray-700 shadow-soft flex items-center justify-center group focus:outline-none focus:ring-2 focus:ring-primary-500"
+          >
             <svg
               width="64"
               height="64"
@@ -59,10 +68,23 @@ const ScrollMeter = () => {
                 </linearGradient>
               </defs>
             </svg>
-            <span className="relative z-10 text-xs font-bold text-gray-800 dark:text-white">
-              {Math.round(percent)}%
-            </span>
-          </div>
+            {/* Show percentage when not hovered, chevron when hovered */}
+            {!hovered ? (
+              <span className="relative z-10 text-xs font-bold text-gray-800 dark:text-white">
+                {Math.round(percent)}%
+              </span>
+            ) : (
+              <motion.span
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 10 }}
+                transition={{ duration: 0.2 }}
+                className="absolute inset-0 flex items-center justify-center z-10"
+              >
+                <ChevronUp size={28} className="text-white drop-shadow" />
+              </motion.span>
+            )}
+          </button>
         </motion.div>
       )}
     </AnimatePresence>
