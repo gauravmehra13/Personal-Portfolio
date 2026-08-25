@@ -24,7 +24,7 @@ const About = () => {
   const stats = [
     {
       icon: <Code size={22} />,
-      value: "2+",
+      value: "3",
       label: "Years Experience",
       color: "bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400",
     },

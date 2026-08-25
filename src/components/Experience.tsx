@@ -11,9 +11,23 @@ const Experience = () => {
 
   const experiences = [
     {
+      company: "Sigmoid",
+      role: "Software Development Engineer",
+      period: "Sept 2025 - Present",
+      description:
+        "Working as a Software Engineer focusing on frontend development and application architecture.",
+      achievements: [
+        "Developed an interactive, drag-and-drop planogram visualizer using React, with an extensible architecture supporting diverse client requirements across Walmart, Tesco, and other retail organizations.",
+        "Implemented Role-Based Access Control (RBAC) with Azure AD Groups, enabling granular feature access and secure authorization for users",
+        "Integrated Microsoft Power BI dashboards and optimized front-end performance using React Query and virtualization for efficient data fetching and rendering",
+        "Managed PostgreSQL databases using pgAdmin, including querying, data management, and database-level troubleshooting"
+      ],
+      color: "border-primary-500 dark:border-primary-400",
+    },
+    {
       company: "Sudoviz",
       role: "Software Development Engineer",
-      period: "Oct 2023 - Present",
+      period: "Oct 2023 - Jul 2025",
       description:
         "Working as a Software Engineer focusing on frontend development and application architecture.",
       achievements: [
